@@ -8,14 +8,13 @@ const LatestSection = () => {
     const [ads, setAds] = useState([]);
 
     useEffect(() => {
-        axios.get('/ad').then(res => {
-            let ads1 = []
-            ads1 = res.data
+        axios.get('https://api-olx-clone.herokuapp.com/ad/').then(res => {
+            const ads1 = res.data;
             setAds(ads1);
-            console.log(ads1)
         });
     }, []);
 
+    console.log(ads)
 
     return (
         <div className="container">
