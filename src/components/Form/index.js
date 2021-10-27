@@ -34,10 +34,11 @@ const Form = () => {
 
         axios({
             headers: {
-                'content-type': 'multipart/form-data'
+                'content-type': 'multipart/form-data',
+                'Access-Control-Allow-Origin' : '*',
             },
             method: 'post',
-            url: 'https://api-olx-clone.herokuapp.com/ad/',
+            url: 'http://api-olx-clone.herokuapp.com/ad/',
             data: fd,
         });
     }
