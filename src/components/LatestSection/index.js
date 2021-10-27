@@ -9,9 +9,10 @@ const LatestSection = () => {
 
     useEffect(() => {
         axios.get('/ad').then(res => {
-            const ads = res.data;
-            setAds(ads);
-            console.log(ads)
+            let ads1 = []
+            ads1 = res.data
+            setAds(ads1);
+            console.log(ads1)
         });
     }, []);
 
@@ -21,7 +22,7 @@ const LatestSection = () => {
             <h5>Anúncios Recentes</h5>
             <SC.LatestSectionStyle>
                 <ul>
-                    {ads.map(ad => ([
+                    {ads.map(ad => (
                         <AdCard key={ad.id_ad} 
                                 title={ad.product} 
                                 id={ad.id_ad}
@@ -32,7 +33,7 @@ const LatestSection = () => {
                                 description={ad.description}
                                 categorie={ad.categorie}
                         />
-                    ]))}
+                    ))}
                 </ul>
             </SC.LatestSectionStyle>
         </div>
