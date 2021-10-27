@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: #f6f6f6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-mid {
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.categories-list ul {
+    display: grid;
+    padding: 0 30px;
+    grid-template-columns: repeat(10, 1fr);
 }
 
-.App-link {
-  color: #61dafb;
+.container, .container-w-bg {
+    width: 85%;
+    background-color: #FFF;
+    margin: auto;
+    padding: 30px 20px;
+    margin-bottom: 40px;
+}
+.container-w-bg {
+    padding: 0 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container-w-bg {
+    background: transparent;
+}
+.container h5, .container-w-bg h5 {
+    color: #525252;
+    margin-bottom: 30px;
+}
+.container .section-title-w-icon h5 {
+    margin: 0;
+}
+
+.container .section-title-w-icon {
+    display: flex;
+    align-items: center;
+}
+.container .section-title-w-icon i {
+    margin-right: 20px;
+    color: gray;
+    font-size: 26px;
+}
+
+.state-select {
+    display: none;
+    margin: 20px auto;
+    width: 90%;
+}
+
+
+@media screen and (max-width: 950px) {
+    .categories-list ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .categories-list ul {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .state-select {
+        display: block;
+    }
 }
