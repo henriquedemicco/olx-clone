@@ -38,7 +38,7 @@ const Form = () => {
                 'access-control-allow-origin' : '*',
             },
             method: 'post',
-            url: 'https://api-olx-clone.herokuapp.com/ad/',
+            url: 'https://cors-anywhere-herokuapp.com/https://api-olx-clone.herokuapp.com/ad/',
             data: fd,
         });
     }
