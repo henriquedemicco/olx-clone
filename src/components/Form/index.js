@@ -37,7 +37,7 @@ const Form = () => {
                 'content-type': 'multipart/form-data'
             },
             method: 'post',
-            url: '/ad/',
+            url: '/ad',
             data: fd,
         });
     }
