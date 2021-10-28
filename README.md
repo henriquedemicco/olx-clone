@@ -1,5 +1,7 @@
 # olx-clone 🛒
 
+> Desenvolvido utilizando a biblioteca ReactJs
+
 
 ## Proposta
 
