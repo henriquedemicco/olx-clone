@@ -18,7 +18,4 @@ Para rodar o projeto, basta executar o seguinte comando, no diretório do mesmo:
 Acesse [http://localhost:3000](http://localhost:3000) para visualização em seu navegador.
 
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
