@@ -37,7 +37,7 @@ const Form = () => {
                 'content-type': 'multipart/form-data'
             },
             method: 'post',
-            url: 'http://api-olx-clone.herokuapp.com/ad',
+            url: 'http://api-olx-clone.herokuapp.com/ad/',
             data: fd,
         });
     }
